@@ -75,7 +75,7 @@ function benchmark(string $name, Closure $fn, int $runs = 10): void
 }
 
 echo "=== getCasts() Caching Benchmark ===\n";
-echo "PHP " . PHP_VERSION . ", 500 models, 7 cast attributes, $runs runs\n\n";
+echo "PHP " . PHP_VERSION . ", 500 models, 7 cast attributes, 10 runs\n\n";
 
 $model = Post::first();
 benchmark('Isolated getCasts() x 100,000', function () use ($model) {
